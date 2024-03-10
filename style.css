@@ -138,6 +138,10 @@
 #project h3{
    font-size: 2.5rem;
 }
+#project h2{
+   margin-left: 150px;
+   font-size: 50px;
+}
 .card{
    width: 380px;
    display: flex;
