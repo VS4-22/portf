@@ -48,15 +48,6 @@
    border-radius: 4px;
   
    }
-   ul:hover{
-    transform:scale(1.2);
-    
-   }
-   /* .logo{
-      font-size: 2.8rem;
-      font-weight: 1000;
-      
-   } */
    li{
       font-size: 22px;
 
@@ -73,12 +64,9 @@
  nav li:hover{
   border-bottom: 0.1rem white solid;
   transition:0.3s ease-in-out;
-  /* background-color:rgb(252, 184, 58); */
   transform: scale(1.2);
-  transform: rotate(-10deg);
  }
  main{
-   /* background: rgb(14, 62, 73); */
    padding: 25px;
 }
 #ma{
