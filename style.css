@@ -12,7 +12,6 @@
     scroll-behavior: smooth;
     color: white;
     overflow-wrap: normal;
-    background-image: url(ima/11.jpg);
     background-size: cover;
     background-position: center;
     /* background-repeat:unset; */
@@ -49,24 +48,25 @@
   
    }
    li{
-      font-size: 22px;
-
+      font-size: 20px;
       list-style: none;
       transform: scale(1.1);
-      /* background-color: white; */
-      color:rgb(7, 1, 12);
-     
+      border-radius: 4px;
+      padding: 5px;
  }
  nav li{
    border-bottom:0.4rem var(transparent)solid;
-   transition:0.3s ease-in-out;
+   /* transition:0.3s ease-in-out; */
  }
  nav li:hover{
-  border-bottom: 0.1rem white solid;
-  transition:0.3s ease-in-out;
-  transform: scale(1.2);
+  /* border-bottom: 0.1rem white solid; */
+  /* transition:0.3s ease-in-out; */
+  /* transform: scale(1.2); */
+  background-color:dimgray ; 
+  opacity: 0.8;
  }
  main{
+   /* background: rgb(14, 62, 73); */
    padding: 25px;
 }
 #ma{
