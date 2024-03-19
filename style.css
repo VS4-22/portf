@@ -15,6 +15,9 @@
     background-size: cover;
     background-position: center;
     /* background-repeat:unset; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* perspective: 10 px; */
  }
  body{
     font: size 1.4rem; ;
@@ -235,6 +238,9 @@ html {
 }
 #ma{
    display: flex;
+   flex-wrap: wrap;
+  gap: 20rem;
+  justify-content: space-evenly;
 }
 .mp{
    display: grid;
@@ -248,11 +254,13 @@ html {
  .ani{
    margin: auto;
    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-   overflow: auto;
+   overflow-y:hidden;
    background: linear-gradient(315deg, rgb(180, 25, 170) 3%, rgba(60,132,206,1) 38%, rgb(26, 205, 193) 68%, rgba(255,25,25,1) 98%);
    animation: gradient 15s ease infinite;
    background-size: 400% 400%;
    background-attachment: fixed;
+   /* position: relative;
+   transform-style: preserve-3d; */
 }
 
 @keyframes gradient {
@@ -275,7 +283,7 @@ html {
    height: 12em;
    animation: wave 10s -3s linear infinite;
    transform: translate3d(0, 0, 0);
-   opacity: 0.8;
+   opacity: 0;
    bottom: 0;
    left: 0;
    z-index: -1;
@@ -284,13 +292,13 @@ html {
 .wave:nth-of-type(2) {
    bottom: -1.25em;
    animation: wave 18s linear reverse infinite;
-   opacity: 0.8;
+   opacity: 0;
 }
 
 .wave:nth-of-type(3) {
    bottom: -2.5em;
    animation: wave 20s -1s reverse infinite;
-   opacity: 0.9;
+   opacity: 0;
 }
 
 @keyframes wave {
