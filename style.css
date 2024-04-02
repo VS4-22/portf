@@ -401,7 +401,7 @@ a h3{
    .project_container{
       flex-wrap: wrap;
       justify-content: space-evenly;
-      height: 70vh;
+      height: 55vh;
       overflow-y: auto;
    }
 }
