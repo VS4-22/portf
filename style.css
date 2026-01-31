@@ -6,10 +6,21 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #0f172a;
   color: white;
   line-height: 1.6;
+
+  background: linear-gradient(
+    -45deg,
+    #0f172a,
+    #020617,
+    #1e293b,
+    #020617
+  );
+
+  background-size: 400% 400%;
+  animation: gradientBG 25s ease infinite;
 }
+
 
 /* NAVBAR */
 
@@ -272,6 +283,19 @@ footer {
     transform: translateY(0);
   }
 }
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 
 
 
